@@ -113,7 +113,7 @@ function CabinRow({cabin}) {
                              onConfirm={() => deleteCabin(cabinId)}
                              disabled={isDeleting}/>
             </Modal.Window>
-            
+
           </Menus.Menu>
         </Modal>
 
