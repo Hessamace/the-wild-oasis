@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import styled from "styled-components";
 import {
   HiOutlineCalendarDays,
@@ -29,6 +29,7 @@ const StyledNavLink = styled(NavLink)`
   }
 
   /* This works because react-router places the active class on the active NavLink */
+
   &:hover,
   &:active,
   &.active:link,
@@ -59,31 +60,31 @@ function MainNav() {
       <NavList>
         <li>
           <StyledNavLink to="/dashboard">
-            <HiOutlineHome />
+            <HiOutlineHome suppressHydrationWarning/>
             <span>Home</span>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/bookings">
-            <HiOutlineCalendarDays />
+            <HiOutlineCalendarDays suppressHydrationWarning/>
             <span>Bookings</span>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/cabins">
-            <HiOutlineHomeModern />
+            <HiOutlineHomeModern suppressHydrationWarning/>
             <span>Cabins</span>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/users">
-            <HiOutlineUsers />
+            <HiOutlineUsers suppressHydrationWarning/>
             <span>Users</span>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/settings">
-            <HiOutlineCog6Tooth />
+            <HiOutlineCog6Tooth suppressHydrationWarning/>
             <span>Settings</span>
           </StyledNavLink>
         </li>
