@@ -9,11 +9,10 @@ import Button from "../../ui/Button";
 import ButtonText from "../../ui/ButtonText";
 
 import {useMoveBack} from "../../hooks/useMoveBack";
-import {useNavigate, useParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useBooking} from "./useBooking.js";
 import Spinner from "../../ui/Spinner.jsx";
-import Menus from "../../ui/Menus.jsx";
-import {HiArrowDownOnSquare, HiArrowUpOnSquare, HiTrash} from "react-icons/hi2";
+import {HiArrowUpOnSquare} from "react-icons/hi2";
 import {useCheckout} from "../check-in-out/useCheckout.js";
 import Modal from "../../ui/Modal.jsx";
 import ConfirmDelete from "../../ui/ConfirmDelete.jsx";
