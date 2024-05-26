@@ -39,7 +39,7 @@ const Discount = styled.div`
 
 function CabinRow({cabin}) {
   const {isDeleting, deleteCabin} = useDeleteCabin();
-  const {createCabin} = useCreateCabin();
+  const {isCreating, createCabin} = useCreateCabin();
 
   const {
     id: cabinId,
@@ -81,7 +81,8 @@ function CabinRow({cabin}) {
 
             <Menus.List id={cabinId}>
               <Menus.Button icon={<HiSquare2Stack/>}
-                            onClick={handleDuplicate}>Duplicate</Menus.Button>
+                            onClick={handleDuplicate}
+                            disabled={isCreating}>Duplicate</Menus.Button>
 
               <Modal.Open opens="cabin-form-edit">
                 <Menus.Button icon={<HiPencil/>}>Edit</Menus.Button>
